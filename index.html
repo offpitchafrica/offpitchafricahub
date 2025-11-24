@@ -1092,17 +1092,24 @@
 
         /* Map Section */
         .map-container {
-            height: 400px;
-            background: #f5f7fa;
-            border-radius: 15px;
-            overflow: hidden;
-            margin-top: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-light);
-            font-size: 1.2rem;
-        }
+    height: 400px;
+    background: #f5f7fa;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 40px;
+    position: relative;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+[data-theme="dark"] .map-container {
+    background: #2a2a2a;
+}
 
         [data-theme="dark"] .map-container {
             background: #2a2a2a;
@@ -2493,7 +2500,7 @@
                     </div>
 
                     <div class="map-container">
-                        <p>Map would be embedded here showing our location</p>
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.17044270584!2d36.76499575876998!3d-1.3030359782409504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1763972664780!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                     <div class="page-nav">
